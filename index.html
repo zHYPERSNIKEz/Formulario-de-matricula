@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrela do Amanhã</title>
+    
+    <link rel="stylesheet" href="./assents/style/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <main>
+            <div class="main-container">
+                <div class="back">
+                    <img src="assents/icons/arrow-left-02.svg" alt="icon de voltar">
+                    <span>volta</span>
+                </div>
+
+                <h1>Formulário de matrícula</h1>
+                <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+
+                <form action="" method="post" enctype="multipart/form-data">
+                    <fieldset class="child-info">
+                        <legend>Informação da Criança</legend>
+                        
+                        <div class="input-wrapper">
+                            <label for="fullname">Nome completo</label>
+                            <input
+                             id="fullname" 
+                             type="text" name="fullname"
+                            placeholder="Qual o nome da criança">
+                        </div>
+                         
+                        <div class="input-wrapper">
+                            <label for="">Data de nascimento</label>
+                            <input id="birth" type="date" 
+                            name ="birth" lang="pt-BR">
+                        </div>
+
+                        <div class="secect-wrapper">
+                            <label for="">Sexo</label>
+                            <select name="gender" id="gender">
+                                <option value="female">Femino</option>
+                                <option value="male">Masculino</option>
+                                <option value="na">Prefiro não responder</option>
+                            </select>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="">Informações médicas</label>
+                            <textarea name="medical-info" id="medical-info" cols="30" rows="5" placeholder="A criança conhece alguma condição médica que a escola deva estar ciente? (Se sim, especifique)"></textarea>
+
+                        </div>
+
+                        <div class="dropare-wrapper">
+                            
+                            <div class="dropzone">
+                                <label for="birth-file">Certidão de Nascimento</label>
+                                <input type="file" id="birth-file" name="birth-file">
+                                <img src="assents/icons/cloud-upload.svg" alt="">
+                                <p>Clique aqui <br>
+                                    selecionar os arquivos
+                                </p>
+                            </div>
+                        </div>    
+                    </fieldset>
+
+                    <fieldset class="address">
+                        <legend>Endereço residencial</legend>
+
+                        <div class="input-wrapper ">
+                            <label for="cep"></label>
+                            <input type="text" id="cep" name="cep">
+                        </div>
+                        <div class="flex">
+
+                            <div class="input-wrapper flex-2">
+                                <label for="street">Rua</label>
+                                <input type="text" id="street" name="street" value="Rua das Flores" disabled>
+                            </div>
+
+                            <div class="input-wrapper flex-1">
+                                <label for="number">Número</label>
+                                <input type="number" id="number" name="number" >
+                            </div>
+
+                        </div>
+
+                            <div class="flex">
+                                <div class="input-wrapper flex-2">
+                                    <label for="city">Cidade</label>
+                                    <input type="text" id="city" name="city" value="São Paulo" disabled>
+                                </div>
+    
+                                <div class="input-wrapper flex-1">
+                                    <label for="state">Estado</label>
+                                    <input type="text" id="state" name="state" disabled >
+                                </div>
+
+                            </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+
+        <aside>
+            <div class="aside-container">
+                <header>
+                    <img src="assents/Logo.svg" alt="Logo estrela dos Amanhã">
+                    <h2>Porque cada momento de 
+                        <span>aprendizado</span> 
+                        conta
+                    </h2>
+                    <p>
+                        Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.  
+                    </p>
+
+                    
+                </header>
+
+                <img src="assents/Illustration.svg" alt="Ilustração de uma professora com crianças prestando atenção">
+            </div>
+        </aside>
+    </div>
+    
+</body>
+</html>
